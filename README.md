@@ -183,7 +183,7 @@ We'd love your help making Watchdog even better! Here's how:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/good-boy`)
-3. Commit your changes (`git commit -m 'Add some good boy feature'`)
+3. Commit your changes (`git commit -m 'chore: Add some good boy feature'`)
 4. Push to the branch (`git push origin feature/good-boy`)
 5. Open a Pull Request
 
