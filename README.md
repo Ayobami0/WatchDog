@@ -180,7 +180,6 @@ Released under MIT License - feel free to pet, play with, and modify your Watchd
 - [ ] Recursive directory watching
 - [ ] Regular expression patterns
 - [ ] Multiple command execution
-- [ ] WebSocket notifications
 - [ ] Configuration file support
 
 ---
