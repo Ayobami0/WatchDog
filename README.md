@@ -1,57 +1,7 @@
-<center>
- __          __   _       _     _____
- \ \        / /  | |     | |   |  __ \
-  \ \  /\  / /_ _| |_ ___| |__ | |  | | ___   __ _
-   \ \/  \/ / _  | __/ __|  _ \| |  | |/ _ \ / _  |
-    \  /\  / (_| | || (__| | | | |__| | (_) | (_| |
-     \/  \/ \____|\__\___|_| |_|_____/ \___/ \__, |
-                                              __/ |
-                                             |____/
-
-          -                                -
-           --                            --
-           =-=-                        -=-=
-           ---==                      ==---
-           -==-=-                    -=-==-
-           -==--=--                --=--==-
-            ++=====--            --=====++
-            +++==*==--------------==*==+++
-            -++=-=*--=-=------=-=-=*=-=++-
-             ++=-====================-=++
-             ++--=========**=========--++
-             ++---=*===*======*===*=---++
-             -+=-=*--=**==++==**=--*=-=+-
-              --===-==+-==**==-+==-===--
-              --==---=+-=-==-=-+=---==--
-              -=*==----=------=----==*=-
-             -=====-------==-------=====-
-              ---=====--======--=====---
-              ----====--======--====----
-                ---==--========--==---
-                 --==--+**++**+--==-- 
-                ---==--+++==+++--==---
-                --=======*==*=======--
-                =-======------======-=
-               -=-=++++=------=++++=-=-
-               =====++++======++++=====
-           *#*--==-=-====-==-====-=-==--*#*
-            ==------==-++++++++-==------==
-            -=-==**=----=++++=----=**==-=-
-              ----=----------------=---- 
-                 ----===-=**=-===----
-                     ----====----
-</center>
+# 🐕 Watchdog
 
 A lightweight and elegant file watcher that executes commands when files change. Perfect for development workflows, build processes, and automated testing.
 Like a loyal dog 🐕 for your development workflows.
-
-# 🐕 Watchdog
-
-A friendly and vigilant file watcher that executes commands when your files change. Like a loyal guard dog for your development workflow!
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Go Version](https://img.shields.io/badge/go-%3E%3D%201.16-00ADD8.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## 🦮 Introduction
 
@@ -116,7 +66,7 @@ watchdog -f main.go,templates/,static/ -i 500ms go run main.go
 watchdog -s make build
 ```
 
-4. Watch TypeScript files and run compiler:
+4. Watch multiple files and run compiler:
 ```bash
 watchdog -f src/*.ts -i 1s tsc
 ```
@@ -126,6 +76,48 @@ watchdog -f src/*.ts -i 1s tsc
 Watchdog provides friendly, detailed output:
 
 ```
+ __          __   _       _     _____
+ \ \        / /  | |     | |   |  __ \
+  \ \  /\  / /_ _| |_ ___| |__ | |  | | ___   __ _
+   \ \/  \/ / _  | __/ __|  _ \| |  | |/ _ \ / _  |
+    \  /\  / (_| | || (__| | | | |__| | (_) | (_| |
+     \/  \/ \____|\__\___|_| |_|_____/ \___/ \__, |
+                                              __/ |
+                                             |____/
+
+          -                                -
+           --                            --
+           =-=-                        -=-=
+           ---==                      ==---
+           -==-=-                    -=-==-
+           -==--=--                --=--==-
+            ++=====--            --=====++
+            +++==*==--------------==*==+++
+            -++=-=*--=-=------=-=-=*=-=++-
+             ++=-====================-=++
+             ++--=========**=========--++
+             ++---=*===*======*===*=---++
+             -+=-=*--=**==++==**=--*=-=+-
+              --===-==+-==**==-+==-===--
+              --==---=+-=-==-=-+=---==--
+              -=*==----=------=----==*=-
+             -=====-------==-------=====-
+              ---=====--======--=====---
+              ----====--======--====----
+                ---==--========--==---
+                 --==--+**++**+--==-- 
+                ---==--+++==+++--==---
+                --=======*==*=======--
+                =-======------======-=
+               -=-=++++=------=++++=-=-
+               =====++++======++++=====
+           *#*--==-=-====-==-====-=-==--*#*
+            ==------==-++++++++-==------==
+            -=-==**=----=++++=----=**==-=-
+              ----=----------------=---- 
+                 ----===-=**=-===----
+                     ----====----
+
 🐶 Watcher Started
   └── Time: 2024-11-03 15:04:05
   └── Command: go run main.go
@@ -150,26 +142,6 @@ Watchdog provides friendly, detailed output:
       └── ✓ Completed (took 1.2s)
 ```
 
-## ⚙️ Configuration
-
-### Refresh Interval (`-i` flag)
-
-Customize how often Watchdog checks for changes:
-```bash
-watchdog -i 100ms  # Default, quick response
-watchdog -i 1s     # Less CPU usage
-watchdog -i 500ms  # Balanced option
-```
-
-### File Patterns (`-f` flag)
-
-Tell Watchdog what to watch:
-```bash
-watchdog -f main.go           # Single file
-watchdog -f src/             # Whole directory
-watchdog -f *.go,templates/  # Multiple patterns
-```
-
 ## 🚨 Limitations
 
 - Maximum of 10 watched files/directories (to prevent resource strain)
@@ -186,6 +158,9 @@ We'd love your help making Watchdog even better! Here's how:
 3. Commit your changes (`git commit -m 'chore: Add some good boy feature'`)
 4. Push to the branch (`git push origin feature/good-boy`)
 5. Open a Pull Request
+
+> [!IMPORTANT]
+> See [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/)
 
 
 ## 📜 License
